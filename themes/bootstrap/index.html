@@ -51,11 +51,11 @@
               <h4>{$lang.eXpiration}</h4>
               <p>
 				<select name="expiration" class="uniform" data-placement="right" rel="tooltip" data-original-title="{$lang.selectlife}">
+				    <option value="4">{$lang.1m}</option>
 					<option value="never">{$lang.never}</option>
 				    <option value="1">{$lang.10mn}</option>
 				    <option value="2">{$lang.1h}</option>
 				    <option value="3">{$lang.1d}</option>
-				    <option value="4">{$lang.1m}</option>
 				</select>             
               </p>  
               <h4>{$lang.exposure}</h4>
@@ -74,11 +74,13 @@
               <p>
 				<input data-placement="right" rel="tooltip" data-original-title="{$lang.pasteName}" name="title" type="text" value="{if isset($smarty.post.title)}{$smarty.post.title}{/if}" class="st-forminput" /><br />
 		      </p>
+<!--
               <h4>Captcha</h4>
               <p>
  			 	 
 				<input data-placement="right" rel="tooltip" data-original-title="{$lang.validcaptcha}" id="txtCaptcha" type="text" name="txtCaptcha" maxlength="5" size="13" /><br />
 				<img data-placement="right" rel="tooltip" data-original-title="{$lang.CoCtrit}" id="imgCaptcha" src="libs/captcha/create_image.php" onclick="setTimeout('refreshimg()', 300); return false;" alt="{$lang.CoCtrit}" /><br /><br />
+-->
 				<input name="submit" type="submit" value="Submit" id="submit" class="btn btn-primary" />     
               </p>
             </div><!--/span-->
